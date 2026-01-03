@@ -1,168 +1,1872 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Paras shah</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="Retrina group" />
-        <link rel="shortcut icon" href="assets/img/favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <style type="text/css">
-            .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:70%;
-    width:100%;
-    position:absolute;
-}
-        </style>
-    </head>
-    <body class="pilling-page">
-        <div id="overlayer">
-            <span class="spinner-grow spinner-grow-lg loader" role="status" aria-hidden="true"></span>
-        </div>
-        <div class="blog-single modal fade" id="blog-single" tabindex="-1" role="dialog" aria-labelledby="blogModalScrollable" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content bg-white">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="blogModalScrollable">Write Your Dreams</h5>
-                        <button type="button" class="close text-muted" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!--   Blog-single   Start -->
-                        <div class="pt-4 pb-5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1 blog">
-                                        <div class="rounded px-lg-5">
-                                            <div class="text-md-left">
-                                                <h4 class="mb-4">The best way to become a good web designer</h4>
-                                                <img src="assets/img/blog-single-01.jpg" alt="" class="img-fluid w-100 rounded">
-                                                <span class="d-inline-block py-4"> 1 April 2019
-                                        / By <span class="purple-color text-right"> John Doe. </span>
-                                        </span>
-                                                <p class="text-muted">These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
-                                                <div class="px-md-5 px-3 py-4 quotation">
-                                                    <i class="base-color lni-quotation size-md"></i>
-                                                    <h6 class="base-color font-italic mb-0">We Love Buna, lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper.</h6>
-                                                </div>
-                                                <p class="my-3 text-muted">These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. These words are here to provide the reader with a basic impression of how actual text will appear in its final presentation. Only for show.</p>
-                                                <ul class="list-unstyled mt-4 checkmark-list">
-                                                    <!-- Item-01 -->
-                                                    <li class="mb-2">
-                                                        <span class="text-muted ml-1">The purpose of lorem ipsum is to create</span>
-                                                    </li>
-                                                    <!-- Item-02 -->
-                                                    <li class="mb-2">
-                                                        <span class="text-muted ml-1">In particular, the garbled words of lorem ipsum</span>
-                                                    </li>
-                                                    <!-- Item-03 -->
-                                                    <li class="mb-2">
-                                                        <span class="text-muted ml-1">occasionally circumstances occur in which toil</span>
-                                                    </li>
-                                                </ul>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paras Shah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-primary: #00d4ff;
+            --accent-secondary: #7b2cbf;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
 
-                                                <!--Blog Reply-->
-                                                <div class="contact mt-4">
-                                                    <div class="contact-form">
-                                                        <h2 class="text-left mb-4">Leave a reply</h2>
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="col-lg-6 form-item">
-                                                                    <div class="form-group">
-                                                                        <input name="name" id="blog-name" type="text" class="form-control" placeholder="Your Name*" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6 form-item">
-                                                                    <div class="form-group">
-                                                                        <input name="email" id="blog-email" type="email" class="form-control" placeholder="Your Email*" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 form-item">
-                                                                    <div class="form-group">
-                                                                        <textarea name="comments" id="blog-comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12 mt-4 text-left">
-                                                                    <button type="submit" class="pill-button" id="blog-submit-btn">Submit</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--   Blog-Single End  -->
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6c757d;
+            --accent-primary: #0066cc;
+            --accent-secondary: #6610f2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            background: rgba(26, 26, 26, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 212, 255, 0.1);
+        }
+
+        [data-theme="light"] .navbar {
+            background: rgba(248, 249, 250, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-link {
+            color: var(--text-primary) !important;
+            font-weight: 500;
+            margin: 0 1rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-primary) !important;
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gradient-bg {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .gradient-bg:nth-child(2) {
+            right: -100px;
+            top: 20%;
+            background: radial-gradient(circle, rgba(118, 75, 162, 0.3) 0%, transparent 70%);
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .ai-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid var(--accent-primary);
+            border-radius: 50px;
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-primary-custom {
+            background: var(--gradient);
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .tech-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(123, 44, 191, 0.05));
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .tech-card:hover::before {
+            opacity: 1;
+        }
+
+        .tech-badges .badge {
+            font-size: 0.7rem;
+            padding: 0.3rem 0.6rem;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .project-icon {
+            font-size: 2rem;
+            color: var(--accent-primary);
+        }
+
+        .project-badge {
+            background: var(--gradient);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .project-metrics {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Certification Cards */
+        .cert-card {
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            padding: 2rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.15);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+
+        .cert-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--gradient);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Metrics Cards */
+        .metric-card {
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: scale(1.05);
+        }
+
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .metric-bg-icon {
+            position: absolute;
+            font-size: 4rem;
+            color: rgba(0, 212, 255, 0.1);
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .quote-icon {
+            font-size: 1.5rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .rating {
+            color: #ffc107;
+        }
+
+        /* GitHub & Community Cards */
+        .github-card, .community-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+        }
+
+        .github-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .github-icon {
+            font-size: 2.5rem;
+            color: var(--accent-primary);
+        }
+
+        .github-stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-item {
+            flex: 1;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .impact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .impact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .impact-item i {
+            font-size: 1.2rem;
+            color: var(--accent-primary);
+            width: 24px;
+            text-align: center;
+        }
+
+        /* Enhanced Contact Section */
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            transform: translateX(5px);
+            border-color: var(--accent-primary);
+        }
+
+        .contact-method i {
+            font-size: 1.5rem;
+            color: var(--accent-primary);
+            width: 30px;
+            text-align: center;
+        }
+
+        .availability-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: rgba(40, 167, 69, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(40, 167, 69, 0.3);
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            background: #28a745;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(40, 167, 69, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+        }
+
+        .contact-form-container {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .form-control, .form-select {
+            background: var(--bg-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background: var(--bg-primary);
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+            box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+        }
+
+        .form-label {
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .project-card, .tech-card, .cert-card {
+                margin-bottom: 1.5rem;
+            }
+            
+            .github-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .contact-methods {
+                gap: 1rem;
+            }
+            
+            .metric-card {
+                height: auto;
+                padding: 1.5rem;
+            }
+            
+            .metric-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .tech-card, .project-card {
+                padding: 1.5rem;
+            }
+            
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+            
+            .cert-card {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        /* Portfolio Gallery Styles */
+        .project-filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: var(--bg-secondary);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--gradient);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .portfolio-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .portfolio-image {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+        }
+
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-overlay i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+
+        .portfolio-overlay span {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-content h5 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .portfolio-content p {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        /* Modal Technologies Container */
+        #modalTechnologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        /* Ensure tech tags in modal have proper spacing */
+        #modalTechnologies .tech-tag {
+            margin: 0.25rem 0;
+            flex-shrink: 0;
+        }
+
+        /* Project Items Animation */
+        .project-item {
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.4s ease;
+        }
+
+        .project-item.hidden {
+            opacity: 0;
+            transform: scale(0.8);
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .project-item.fade-out {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .project-item.fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Load More Button */
+        #loadMoreBtn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid var(--accent-primary);
+            color: var(--accent-primary);
+            transition: all 0.3s ease;
+        }
+
+        #loadMoreBtn:hover {
+            background: var(--gradient);
+            border-color: transparent;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+        }
+
+        #loadMoreBtn.hidden {
+            display: none;
+        }
+
+        /* Modal Styles */
+        .modal-content {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem 2rem 1rem 2rem;
+        }
+
+        .modal-body {
+            padding: 1rem 2rem 2rem 2rem;
+        }
+
+        .modal-title {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        [data-theme="light"] .btn-close {
+            filter: none;
+        }
+
+        .project-links .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .feature-list li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 0.2rem;
+        }
+
+        /* Responsive Design for Portfolio */
+        @media (max-width: 768px) {
+            .project-filters {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .portfolio-content {
+                padding: 1.5rem;
+            }
+            
+            .portfolio-image {
+                height: 200px;
+            }
+            
+            .modal-body {
+                padding: 1rem;
+            }
+            
+            .modal-header {
+                padding: 1.5rem 1rem 0.5rem 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .project-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .portfolio-overlay i {
+                font-size: 2rem;
+            }
+            
+            .tech-tag {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+            }
+        }
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .tech-card:hover::before {
+            left: 100%;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+            border-color: var(--accent-primary);
+        }
+
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skill-bar {
+            background: var(--bg-secondary);
+            height: 10px;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 10px;
+            transition: width 1s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            color: var(--accent-primary);
+            transform: rotate(180deg);
+        }
+
+        .contact-form {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .form-control {
+            background: var(--bg-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control:focus {
+            background: var(--bg-primary);
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links a:hover {
+            background: var(--gradient);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            padding: 2rem 0;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Paras Shah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <i class="fas fa-moon theme-toggle" id="themeToggle"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="gradient-bg"></div>
+        <div class="gradient-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <div class="ai-badge">
+                        <i class="fas fa-robot me-2"></i>AI-Powered Developer
+                    </div>
+                    <h1 class="hero-title">Paras Shah</h1>
+                    <p class="hero-subtitle">Full Stack Developer | AI Enthusiast | Cloud Architect</p>
+                    <p class="text-secondary mb-4">Building intelligent solutions that transform ideas into reality with cutting-edge technologies and artificial intelligence.</p>
+                    <a href="#contact" class="btn btn-primary-custom">
+                        <i class="fas fa-rocket me-2"></i>Let's Connect
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <i class="fas fa-brain" style="font-size: 15rem; opacity: 0.1;"></i>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Portfolio Single Modal -->
-        <div class="portfolio-single modal fade" id="portfolio-single" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content bg-white">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="portfolioModalScrollable">Yassir</h5>
-                        <button type="button" class="close text-muted" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Technologies & Expertise</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-robot tech-icon"></i>
+                        <h4>AI & Machine Learning</h4>
+                        <p class="text-secondary">TensorFlow, PyTorch, OpenAI GPT-4, Claude API, LangChain, RAG Systems, Vector Databases, Hugging Face</p>
+                        <div class="tech-badges mt-3">
+                            <span class="badge bg-primary me-1">OpenAI</span>
+                            <span class="badge bg-success me-1">LangChain</span>
+                            <span class="badge bg-info me-1">Pinecone</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-code tech-icon"></i>
+                        <h4>Frontend Development</h4>
+                        <p class="text-secondary">React 18+, Next.js 15, TypeScript, Svelte, Astro, Tailwind CSS v4, Vite, PWA</p>
+                        <div class="tech-badges mt-3">
+                            <span class="badge bg-primary me-1">React 18</span>
+                            <span class="badge bg-dark me-1">Next.js 15</span>
+                            <span class="badge bg-warning me-1">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-server tech-icon"></i>
+                        <h4>Backend Development</h4>
+                        <p class="text-secondary">Node.js, FastAPI, Serverless, Edge Functions, tRPC, Prisma ORM, GraphQL Federation</p>
+                        <div class="tech-badges mt-3">
+                            <span class="badge bg-success me-1">Serverless</span>
+                            <span class="badge bg-info me-1">tRPC</span>
+                            <span class="badge bg-secondary me-1">Prisma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-database tech-icon"></i>
+                        <h4>Database & Storage</h4>
+                        <p class="text-secondary">MongoDB, PostgreSQL, MySQL, Redis, Firebase, Vector Databases</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-cloud tech-icon"></i>
+                        <h4>Cloud & DevOps</h4>
+                        <p class="text-secondary">AWS, Azure, Google Cloud, Docker, Kubernetes, CI/CD, Terraform</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-card">
+                        <i class="fas fa-mobile-alt tech-icon"></i>
+                        <h4>Mobile Development</h4>
+                        <p class="text-secondary">React Native, Flutter, Progressive Web Apps, Cross-platform Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Artificial Intelligence & ML</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="95%"></div>
+                    </div>
+                    <h5>Full Stack Development</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="92%"></div>
+                    </div>
+                    <h5>Cloud Architecture</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="88%"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5>UI/UX Design</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                    </div>
+                    <h5>DevOps & Automation</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                    </div>
+                    <h5>Data Science & Analytics</h5>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="87%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Projects Showcase -->
+    <section id="ai-projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">🤖 AI-Powered Projects</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <i class="fas fa-brain project-icon"></i>
+                            <div class="project-badge">AI</div>
+                        </div>
+                        <h5>Intelligent Code Assistant</h5>
+                        <p class="text-secondary mb-3">AI-powered code review and optimization tool using GPT-4 API with custom prompting and context analysis.</p>
+                        <div class="project-tags mb-3">
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <div class="project-metrics">
+                            <small class="text-success"><i class="fas fa-chart-line me-1"></i>94% accuracy</small>
+                            <small class="text-info ms-3"><i class="fas fa-users me-1"></i>500+ users</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <i class="fas fa-robot project-icon"></i>
+                            <div class="project-badge">RAG</div>
+                        </div>
+                        <h5>Smart Customer Support Bot</h5>
+                        <p class="text-secondary mb-3">RAG-based chatbot with document retrieval, built using Vector DB and real-time learning capabilities.</p>
+                        <div class="project-tags mb-3">
+                            <span class="tag">Pinecone</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <div class="project-metrics">
+                            <small class="text-success"><i class="fas fa-clock me-1"></i>2s response</small>
+                            <small class="text-info ms-3"><i class="fas fa-percentage me-1"></i>89% satisfaction</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <i class="fas fa-eye project-icon"></i>
+                            <div class="project-badge">CV</div>
+                        </div>
+                        <h5>AI Image Recognition Platform</h5>
+                        <p class="text-secondary mb-3">Real-time image analysis using computer vision with custom model training and edge deployment.</p>
+                        <div class="project-tags mb-3">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">AWS Lambda</span>
+                        </div>
+                        <div class="project-metrics">
+                            <small class="text-success"><i class="fas fa-bullseye me-1"></i>96% precision</small>
+                            <small class="text-info ms-3"><i class="fas fa-tachometer-alt me-1"></i>150ms latency</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="section-title">🏆 Certifications & Achievements</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-card text-center">
+                        <i class="fab fa-aws cert-icon"></i>
+                        <h6>AWS Solutions Architect</h6>
+                        <p class="text-secondary small">Professional Level</p>
+                        <div class="cert-badge">2024</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-card text-center">
+                        <i class="fab fa-google cert-icon"></i>
+                        <h6>Google Cloud Professional</h6>
+                        <p class="text-secondary small">Data Engineer</p>
+                        <div class="cert-badge">2024</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-card text-center">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h6>TensorFlow Developer</h6>
+                        <p class="text-secondary small">Certified Professional</p>
+                        <div class="cert-badge">2024</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cert-card text-center">
+                        <i class="fab fa-react cert-icon"></i>
+                        <h6>Meta Frontend Expert</h6>
+                        <p class="text-secondary small">Advanced React & Next.js</p>
+                        <div class="cert-badge">2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section id="metrics" class="py-5">
+        <div class="container">
+            <h2 class="section-title">📊 Performance Impact</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-number">99.9%</div>
+                        <div class="metric-label">Uptime Achieved</div>
+                        <i class="fas fa-server metric-bg-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-number">50%</div>
+                        <div class="metric-label">Load Time Reduction</div>
+                        <i class="fas fa-tachometer-alt metric-bg-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-number">100M+</div>
+                        <div class="metric-label">API Requests Handled</div>
+                        <i class="fas fa-exchange-alt metric-bg-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-number">95</div>
+                        <div class="metric-label">Lighthouse Score</div>
+                        <i class="fas fa-lighthouse metric-bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="section-title">💬 Client Testimonials</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"Paras delivered an exceptional AI-powered solution that transformed our customer support. The chatbot reduced response time by 80% and increased satisfaction scores significantly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>Sarah Johnson</h6>
+                                <small class="text-secondary">CTO, TechFlow Inc.</small>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"Outstanding full-stack development with modern AI integration. The performance optimizations alone saved us $50k annually in server costs."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>Michael Chen</h6>
+                                <small class="text-secondary">CEO, DataVision</small>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"Incredible expertise in both AI/ML and web development. Delivered a complex RAG system that exceeded all expectations and timelines."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h6>Emily Rodriguez</h6>
+                                <small class="text-secondary">Product Manager, AI Startup</small>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Contributions -->
+    <section id="opensource" class="py-5">
+        <div class="container">
+            <h2 class="section-title">🔓 Open Source & Community</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="github-card">
+                        <div class="github-header">
+                            <i class="fab fa-github github-icon"></i>
+                            <div>
+                                <h5>Active Contributor</h5>
+                                <p class="text-secondary mb-0">Building tools for the developer community</p>
+                            </div>
+                        </div>
+                        <div class="github-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Contributions</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">25</div>
+                                <div class="stat-label">Repositories</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Stars Earned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="community-card">
+                        <h5><i class="fas fa-users me-2"></i>Community Impact</h5>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fas fa-microphone-alt"></i>
+                                <div>
+                                    <strong>Tech Speaker</strong>
+                                    <p class="mb-0 text-secondary">AI & Web Dev conferences</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-blog"></i>
+                                <div>
+                                    <strong>Technical Writer</strong>
+                                    <p class="mb-0 text-secondary">50+ published articles</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <strong>Mentor</strong>
+                                    <p class="mb-0 text-secondary">200+ developers guided</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">🚀 Let's Build Something Amazing</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Ready to collaborate on your next AI-powered project?</h4>
+                        <p class="text-secondary mb-4">Whether you need a full-stack web application, AI integration, or performance optimization, I'm here to help bring your vision to life.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p class="mb-0">paras@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <strong>LinkedIn</strong>
+                                    <p class="mb-0">linkedin.com/in/parasshah</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <strong>GitHub</strong>
+                                    <p class="mb-0">github.com/parasshah</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Schedule a Call</strong>
+                                    <p class="mb-0">calendly.com/parasshah</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="availability-status mt-4">
+                            <div class="status-indicator"></div>
+                            <span class="text-success"><strong>Available for new projects</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="company" class="form-label">Company</label>
+                                    <input type="text" class="form-control" id="company">
+                                </div>
+                                <div class="col-12">
+                                    <label for="project" class="form-label">Project Type</label>
+                                    <select class="form-select" id="project">
+                                        <option value="">Select project type</option>
+                                        <option value="ai-integration">AI Integration</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="performance">Performance Optimization</option>
+                                        <option value="consulting">Technical Consulting</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">💼 Featured Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <div class="project-filters text-center">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th me-2"></i>All Projects
+                        </button>
+                        <button class="filter-btn" data-filter="ai-ml">
+                            <i class="fas fa-robot me-2"></i>AI & ML
+                        </button>
+                        <button class="filter-btn" data-filter="web">
+                            <i class="fas fa-globe me-2"></i>Web Apps
+                        </button>
+                        <button class="filter-btn" data-filter="mobile">
+                            <i class="fas fa-mobile-alt me-2"></i>Mobile
+                        </button>
+                        <button class="filter-btn" data-filter="ecommerce">
+                            <i class="fas fa-shopping-cart me-2"></i>E-commerce
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <div class="pt-4 pb-5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-md-10 offset-md-1">
-                                        <div class="text-center">
-                                            <h2 class="text-dark mb-3">Yas <span class="base-color">Sir</span></h2>
+                </div>
+            </div>
+
+            <!-- Projects Gallery -->
+            <div class="row g-4" id="projectsGrid">
+                <!-- Project 1 - AI Chatbot -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ai-ml" data-index="1">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(1)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" 
+                                 alt="AI Chatbot Platform" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>AI Chatbot Platform</h5>
+                            <p class="text-secondary">Intelligent customer support automation</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">OpenAI</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - E-commerce Platform -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="ecommerce web" data-index="2">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(2)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" 
+                                 alt="E-commerce Platform" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>Modern E-commerce Platform</h5>
+                            <p class="text-secondary">Full-stack shopping experience</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Mobile App -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="mobile" data-index="3">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(3)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" 
+                                 alt="Fitness Tracking App" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>Fitness Tracking App</h5>
+                            <p class="text-secondary">Cross-platform health monitoring</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">AI Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Data Analytics Dashboard -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web ai-ml" data-index="4">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(4)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" 
+                                 alt="Analytics Dashboard" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>AI Analytics Dashboard</h5>
+                            <p class="text-secondary">Real-time data visualization</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Blockchain Wallet -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web" data-index="5">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(5)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=300&fit=crop" 
+                                 alt="Crypto Wallet" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>Crypto Wallet DApp</h5>
+                            <p class="text-secondary">Decentralized finance solution</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">Web3.js</span>
+                                <span class="tech-tag">Ethereum</span>
+                                <span class="tech-tag">Solidity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Learning Management System -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web ai-ml" data-index="6">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(6)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=300&fit=crop" 
+                                 alt="Learning Platform" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>AI-Powered LMS</h5>
+                            <p class="text-secondary">Personalized learning experience</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">AI Tutoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 - IoT Dashboard -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web" data-index="7">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(7)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
+                                 alt="IoT Dashboard" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>Smart Home IoT Platform</h5>
+                            <p class="text-secondary">Connected device management</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MQTT</span>
+                                <span class="tech-tag">AWS IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Social Media App -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="mobile web" data-index="8">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                         onclick="openProjectModal(8)">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=400&h=300&fit=crop" 
+                                 alt="Social Media App" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5>Social Media Platform</h5>
+                            <p class="text-secondary">Real-time communication hub</p>
+                            <div class="portfolio-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">GraphQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button id="loadMoreBtn" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-plus me-2"></i>Load More Projects
+                    <span class="badge bg-primary ms-2" id="remainingCount">4</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="modalImage" src="" alt="Project Image" class="img-fluid rounded mb-3">
+                            <div class="project-links">
+                                <a href="#" id="liveLink" class="btn btn-primary me-2" target="_blank">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                                <a href="#" id="githubLink" class="btn btn-outline-primary" target="_blank">
+                                    <i class="fab fa-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="modalProjectName">Project Name</h4>
+                            <p id="modalDescription" class="text-secondary mb-4">Project description...</p>
+                            
+                            <h6><i class="fas fa-cogs me-2"></i>Technologies Used:</h6>
+                            <div id="modalTechnologies" class="mb-4">
+                                <!-- Technologies will be inserted here -->
+                            </div>
+                            
+                            <h6><i class="fas fa-chart-line me-2"></i>Key Features:</h6>
+                            <ul id="modalFeatures" class="feature-list">
+                                <!-- Features will be inserted here -->
+                            </ul>
+                            
+                            <div class="project-metrics mt-4">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="metric-item">
+                                            <div class="metric-value" id="modalMetric1">-</div>
+                                            <div class="metric-label" id="modalMetric1Label">-</div>
                                         </div>
-                                        <div class="row contact-info mt-5">
-                                            <div class="col-md-4">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6>Language Used</h6>
-                                                        <p class="text-muted mb-0">Php</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 p-title-border mt-3 mt-md-0">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6 class="contact_detail-title">Website Link</h6>
-                                                        <p class="text-muted mb-0"><a href="https://yassir.in/" target="_blank">https://yassir.in</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mt-3 mt-md-0">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6>Framework Used</h6>
-                                                        <p class="text-muted mb-0">Laravel</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="metric-item">
+                                            <div class="metric-value" id="modalMetric2">-</div>
+                                            <div class="metric-label" id="modalMetric2Label">-</div>
                                         </div>
-                                        <div class="mt-5">
-                                            <div class="portfolio-single-item">
-                                                <img src="assets/img/main_yassir.PNG" class="d-block w-100 rounded" alt="...">
-                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="metric-item">
+                                            <div class="metric-value" id="modalMetric3">-</div>
+                                            <div class="metric-label" id="modalMetric3Label">-</div>
                                         </div>
                                     </div>
                                 </div>
@@ -172,966 +1876,578 @@
                 </div>
             </div>
         </div>
-
-        <div class="portfolio-single modal fade" id="portfolio-single-nestplace" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content bg-white">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="portfolioModalScrollable">Nestplace</h5>
-                        <button type="button" class="close text-muted" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+    </div>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>AI-Powered Chatbot Platform</h4>
+                            <p class="text-secondary">Intelligent conversational AI using GPT-4 and custom ML models for enterprise solutions.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Python</span>
+                                <span class="badge bg-primary me-2">OpenAI</span>
+                                <span class="badge bg-primary">React</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="pt-4 pb-5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-md-10 offset-md-1">
-                                        <div class="text-center">
-                                            <h2 class="text-dark mb-3">Nest<span class="base-color">place</span></h2>
-                                        </div>
-                                        <div class="row contact-info mt-5">
-                                            <div class="col-md-4">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6>Language Used</h6>
-                                                        <p class="text-muted mb-0">Php</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 p-title-border mt-3 mt-md-0">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6 class="contact_detail-title">Website Link</h6>
-                                                        <p class="text-muted mb-0"><a href="https://nestplace.in/" target="_blank">https://nestplace.in</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mt-3 mt-md-0">
-                                                <div class="text-center">
-                                                    <div>
-                                                        <h6>Framework Used</h6>
-                                                        <p class="text-muted mb-0">Laravel</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-5">
-                                            <div class="portfolio-single-item">
-                                                <img src="assets/img/main_nestplace.PNG" class="d-block w-100 rounded" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Predictive Analytics Dashboard</h4>
+                            <p class="text-secondary">Real-time data visualization and ML-powered forecasting for business intelligence.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">React</span>
+                                <span class="badge bg-primary me-2">TensorFlow</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Computer Vision System</h4>
+                            <p class="text-secondary">Advanced object detection and image classification system using deep learning.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">PyTorch</span>
+                                <span class="badge bg-primary me-2">OpenCV</span>
+                                <span class="badge bg-primary">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>E-Commerce Platform</h4>
+                            <p class="text-secondary">Scalable microservices-based platform with AI recommendations and payment integration.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Node.js</span>
+                                <span class="badge bg-primary me-2">MongoDB</span>
+                                <span class="badge bg-primary">Kubernetes</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!--  Page Pilling  Strat  -->
-		 <div id="pagepiling" class="pagepiling">
-
-             <!--   Header Start -->
-             <header>
-                 
-                 <div class="header-info-area">
-                     <a class="overlay-menu-toggler lni-menu size-md" href="javascript:void(0);"></a>
-                     <!--    Overlay Menu Start    -->
-                     <div class="overlay-menu bg-blue py-3 px-4 text-center center-item">
-                         <!-- Overlay Menu -->
-                         <div class="overlay-menu-list">
-                             <div class="container">
-                                 <div class="row">
-                                     <div class="col-lg-8 offset-lg-2 overlay-nav">
-                                         <ul class="list-group text-left" id="myMenu">
-                                             <li data-menuanchor="hero" class="list-group-item"><a href="#hero">Home</a></li>
-                                             <li data-menuanchor="about" class="list-group-item"><a href="#about">About me</a></li>
-                                             <li data-menuanchor="services" class="list-group-item"><a href="#services">Services</a></li>
-                                             <li data-menuanchor="portfolio" class="list-group-item"><a href="#portfolio">Portfolio</a></li>
-                                             <li data-menuanchor="client" class="list-group-item"><a href="#testimonial">Client</a></li>
-                                             <li data-menuanchor="blog" class="list-group-item"><a href="#blog">Blog</a></li>
-                                         </ul>
-                                         <ul class="list-group contact-info text-left mb-0">
-                                             <li class="list-group-item"><span>Contact Info :</span></li>
-                                             <li class="list-group-item"><span><i class="lni-map-marker"></i>Ahmedabad, India</span></li>
-                                             <li class="list-group-item"><span><i class="lni-phone-handset"></i> +91-XXXXXXXXXX</span></li>
-                                             <li class="list-group-item"><span><i class="lni-envelope"></i> <a href="mailto:parasshah438@gmail.com">parasshah438@gmail.com</a></span></li>
-                                             <li class="list-group-item"><span>Follow me :</span></li>
-                                             <li class="list-group-item">
-                                                 <ul class="list-inline socails">
-                                                    
-                                                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100024120256803"><i class="lni-facebook-filled"></i></a></li>
-                                                    
-                                                   
-                                                    
-                                                    <li class="list-inline-item"><a target="_blank" href="https://github.com/parasshah438"><i class="lni-github-original"></i></a></li>
-
-                                                    <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/paras-shah-05855993"><i class="lni-linkedin-original"></i></a></li>
-                                                </ul>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <!--    Overlay Menu End    -->
-                 </div>
-             </header>
-             <!--   Header End   -->
-
-            <!--    Hero Start    -->
-            <section class="section pp-scrollable hero hero-01" id="hero" data-navigation-color="#fff" data-navigation-tooltip="HOME" data-background-image="assets/img/nill.jpg">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                            <div class="title-small">
-                                <p class="text-dark">Home</p>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <div class="hero-content">
-                                        <h1 class="text-dark mb-3">I'M Paras Shah</h1>
-                                        <h4 class="text-dark text-capitalize mb-0"><span class="base-color">A  </span> <span class="element" data-elements="UI Designer.,Web Designer.,Web Developer."></span></h4>
-                                        <p class="text-dark max-width-450 mx-0 my-4">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                        <div>
-                                            <ul class="list-inline social-icon mt-2">
-                                                <li class="list-inline-item"><a href="javascript:void(0);"><i class="lni-facebook-filled text-dark"></i></a></li>
-                                                
-                                                <li class="list-inline-item"><a href="https://www.instagram.com/Paras.shah_" target="_blank"><i class="lni-instagram-filled text-dark"></i></a></li>
-                                                
-                                                <li class="list-inline-item"><a href="https://github.com/parasshah438" target="_blank"><i class="lni-github-original text-dark"></i></a></li>
-                                                
-                                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/paras-shah-05855993" target="_blank"><i class="lni-linkedin-original text-dark"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                             </div>
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                        <div class="social-links text-center mt-4">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Paras Shah. All rights reserved. Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and AI</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            themeToggle.classList.toggle('fa-moon');
+            themeToggle.classList.toggle('fa-sun');
+        });
+
+        // Skill Bar Animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
             </section>
-            <!--    Hero End    -->
-
-            <!--   About Start   -->
-            <section id="about" class="section pp-scrollable about text-dark" data-navigation-color="#fff" data-navigation-tooltip="ABOUT ME">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                        <div class="row">
-                            <div class="title-small">
-                                <p class="text-dark">About me</p>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-lg-6">
-                                <img src="assets/img/plogo.jpg" alt="/" class="rounded img-thumbnail w-100">
-                            </div>
-                            <div class="col-lg-6 personal-item  mb-4 mb-lg-0">
-                                <h2 class="text-dark mb-2">About <span class="base-color">Me</span></h2>
-                                <h5 class="text-dark mb-3">Find out who I am, where I'm from and what I'm all about.</h5>
-                                <div class="row">
-                                    <div class="col-lg-5 col-sm-6 personal-info">
-                                        <p class="text-dark">My name's Seb. I'm a web designer and developer based in Southampton, UK.
-
-During the day I’m the lead developer at a local agency. During the evenings I spend my time working on freelance projects and building my own products.</p>
-                                        <p class="text-dark">Birthday : <span class="text-gray">1 Jan 1995</span></p>
-                                        <p class="text-dark">Website : <span class="text-gray">www.parasshah.tech</span></p>
-                                        <p class="text-dark">Phone : <span class="text-gray">+123 456 7890</span></p>
-                                        <p class="text-dark">City : <span class="text-gray"> Ahmedabad, India</span></p>
-                                    </div>
-                                    <div class="col-lg-5 col-sm-6 personal-info">
-                                        <p class="text-dark">Age : <span class="text-gray">25</span></p>
-                                        <p class="text-dark">Degree : <span class="text-gray">Master</span></p>
-                                        <p class="text-dark">Mail : <span class="text-gray"><a href="mailto:parasshah438@gmail.com" class="__cf_email__" data-cfemail="4f2e2d2c0f21262323612c2022">parasshah438@gmail.com</a></span></p>
-                                        <p class="text-dark">Freelance : <span class="text-gray">Available</span></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a href="javascript:void(0);" class="pill-button mt-3 mb-lg-0 mr-4">Download Cv</a>
-                                        <a href="javascript:void(0);" class="pill-button mt-3 mb-lg-0">Send Message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="count-up" class="text-center">
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <!-- Item-01 -->
-                                    <div class="col-6 col-md-3 mt-5 mb-md-0 count-item">
-                                        <div class="count-icon">
-                                            <i class="lni-download size-md"></i>
-                                        </div>
-                                        <div class="count-content">
-                                            <span class="timer count-number" data-from="0" data-to="286" data-speed="5000">286</span>
-                                        </div>
-                                        <p class="mb-0 ">Files Download</p>
-                                    </div>
-                                    <!-- Item-02 -->
-                                    <div class="col-6 col-md-3 mt-5 mb-md-0 count-item">
-                                        <div class="count-icon">
-                                            <i class="lni-pencil-alt size-md"></i>
-                                        </div>
-                                        <div class="count-content">
-                                            <span class="timer count-number" data-from="0" data-to="6549" data-speed="5000">6549</span>
-                                        </div>
-                                        <p class="mb-0">Project Done</p>
-                                    </div>
-                                    <!-- Item-03 -->
-                                    <div class="col-6 col-md-3 mt-5 mb-md-0 count-item">
-                                        <div class="count-icon">
-                                            <i class="lni-medall size-md"></i>
-                                        </div>
-                                        <div class="count-content">
-                                            <span class="timer count-number" data-from="0" data-to="793" data-speed="5000">793</span>
-                                        </div>
-                                        <p class="mb-0">Get Award</p>
-                                    </div>
-                                    <!-- Item-04 -->
-                                    <div class="col-6 col-md-3 mt-5 mb-md-0 count-item">
-                                        <div class="count-icon">
-                                            <i class="lni-emoji-smile size-md"></i>
-                                        </div>
-                                        <div class="count-content">
-                                            <span class="timer count-number" data-from="0" data-to="286" data-speed="5000">286</span>
-                                        </div>
-                                        <p class="mb-0">Happy Client</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <!--    About End    -->
-
-             <!--   Resume Start   -->
-             <section id="resume" class="section pp-scrollable resume" data-navigation-color="#fff" data-navigation-tooltip="RESUME">
-                 <div class="display-table">
-                     <div class="display-content">
-                         <div class="container">
-                         <div class="row">
-                             <div class="title-small">
-                                 <p class="text-dark">Resume</p>
-                             </div>
-                             <div class="col-lg-12">
-                                 <div class="text-left">
-                                     <h2 class="text-dark mb-3">My <span class="base-color">Resume</span></h2>
-                                     <p class="text-muted">I Am Available For Freelance Projects.</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row mt-4">
-                             <div class="col-lg-12">
-                                 <h3 class="text-dark mb-2"><i class="lni-graduation base-color"></i>Education</h3>
-                                 <ul class="timeline">
-                                     <li>
-                                         <h6 class="base-color mb-0">MCA - Master of Computer Applications</h6>
-                                         <small class="text-muted ">2015 - 2017</small>
-                                         
-                                     </li>
-                                    
-                                 </ul>
-                             </div>
-                             
-                         </div>
-                         <div class="row pt-6">
-                             <div class="col-lg-6">
-                                 <div class="skill-box pt-4 pt-lg-0 mt-4 mt-lg-0">
-                                     <div class="skillbar clearfix" data-percent="90%">
-                                         <div class="skillbar-title"><span>HTML</span></div>
-                                         <div class="skillbar-bar"></div>
-                                         <div class="skill-bar-percent">90%</div>
-                                     </div>
-                                     <div class="skillbar clearfix " data-percent="60%">
-                                         <div class="skillbar-title"><span>CSS</span></div>
-                                         <div class="skillbar-bar"></div>
-                                         <div class="skill-bar-percent">60%</div>
-                                     </div>
-                                     <div class="skillbar clearfix" data-percent="90%">
-                                         <div class="skillbar-title"><span>PHP</span></div>
-                                         <div class="skillbar-bar"></div>
-                                         <div class="skill-bar-percent">90%</div>
-                                     </div>
-                                     <div class="skillbar clearfix" data-percent="70%">
-                                         <div class="skillbar-title"><span>Js</span></div>
-                                         <div class="skillbar-bar"></div>
-                                         <div class="skill-bar-percent">70%</div>
-                                     </div>
-                                     <div class="skillbar clearfix" data-percent="90%">
-                                         <div class="skillbar-title"><span>JQuery</span></div>
-                                         <div class="skillbar-bar"></div>
-                                         <div class="skill-bar-percent">90%</div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="col-lg-6">
-                                <div class="skill-box pt-4 pt-lg-0 mt-4 mt-lg-0">
-                                    <div class="skillbar clearfix" data-percent="95%">
-                                        <div class="skillbar-title"><span>Laravel (Framework)</span></div>
-                                        <div class="skillbar-bar"></div>
-                                        <div class="skill-bar-percent">95%</div>
-                                    </div>
-                                    <div class="skillbar clearfix " data-percent="65%">
-                                        <div class="skillbar-title"><span>laravel livewire</span></div>
-                                        <div class="skillbar-bar"></div>
-                                        <div class="skill-bar-percent">65%</div>
-                                    </div>
-                                    <div class="skillbar clearfix" data-percent="50%">
-                                        <div class="skillbar-title"><span>Cakephp (Framework)</span></div>
-                                        <div class="skillbar-bar"></div>
-                                        <div class="skill-bar-percent">50%</div>
-                                    </div>
-                                    <div class="skillbar clearfix" data-percent="50%">
-                                        <div class="skillbar-title"><span>wordpress</span></div>
-                                        <div class="skillbar-bar"></div>
-                                        <div class="skill-bar-percent">50%</div>
-                                    </div>
-                                    <div class="skillbar clearfix" data-percent="50%">
-                                        <div class="skillbar-title"><span>Vue js</span></div>
-                                        <div class="skillbar-bar"></div>
-                                        <div class="skill-bar-percent">50%</div>
-                                    </div>
-                                </div>
-                            </div>
-                         </div>
-                     </div>
-                     </div>
-                 </div>
-             </section>
-             <!--   Resume End   -->
-
-             <!--   Services Start   -->
-             <section id="services" class="section pp-scrollable services" data-navigation-color="#fff" data-navigation-tooltip="SERVICES">
-                 <div class="display-table">
-                     <div class="display-content">
-                        <div class="container">
-                         <div class="row">
-                             <div class="title-small">
-                                 <p class="text-dark">My Services</p>
-                             </div>
-                             <div class="col-lg-12">
-                                 <div class="text-left">
-                                     <h2 class="text-dark mb-3">My <span class="base-color">Services</span></h2>
-                                     <p class="text-muted">Services I Offer To My Clients</p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="row mt-4">
-                             <!-- Item 01 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                         <i class="lni-brush-alt size-md base-color"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Graphic Design</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- Item 02 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                         <i class="lni-check-mark-circle size-md base-color"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Bootstrap support</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- Item 03 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                         <i class="lni-heart size-md base-color"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Portfolio of works</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- Item 04 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1  d-inline-block services-icon">
-                                         <i class="lni-mobile size-md base-color"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Responsive Theme</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- Item 05 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                         <i class="lni-world size-md base-color mb-0"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Go Beyond Limits</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- Item 06 -->
-                             <div class="col-lg-4 text-left">
-                                 <div class="services-item">
-                                     <div class="float-left mt-lg-1 d-inline-block services-icon">
-                                         <i class="lni-cup size-md base-color"></i>
-                                     </div>
-                                     <div class="services-content">
-                                         <h5 class="mb-3">Premium Slider</h5>
-                                         <p class="text-muted mb-0">In a professional context it often happens that private clients corder a publication to be made.</p>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     </div>
-                 </div>
-             </section>
-             <!--   Services End   -->
-
-            <!--  Portfolio Start  -->
-            <section id="portfolio" class="section pp-scrollable portfolio" data-navigation-color="#fff" data-navigation-tooltip="PORTFOLIO">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                        <div class="row">
-                            <div class="title-small">
-                                <p class="text-dark">Portfolio</p>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="text-left">
-                                    <h2 class="text-dark">Creative <span class="base-color">Works</span></h2>
-                                    <p class="text-muted mx-auto section-subtitle mt-3">Here are a few design projects I've worked on recently</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <!--   Portfolio Filters   -->
-                            <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 text-left portfolio-filter">
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter="*" class="active my-1">All</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".webdesign" class="my-1">Real estate </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".business" class="my-1">Business</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".ecommerce" class="my-1">Ecommerce</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".mobiledesign" class="my-1">Mobile Design</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".seo" class="my-1">Seo</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" data-filter=".graphic" class="my-1">Graphic</a>
-                                </li>
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+            <section id="soft-skills" class="py-5">
+                <div class="container">
+                    <h2 class="section-title">🧑‍💼 Soft Skills & Leadership</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent text-primary"><strong>Team Leadership:</strong> Agile/Scrum methodologies</li>
+                                <li class="list-group-item bg-transparent text-primary"><strong>Code Architecture:</strong> Design patterns, SOLID principles</li>
+                                <li class="list-group-item bg-transparent text-primary"><strong>Mentoring:</strong> Junior developer guidance</li>
+                                <li class="list-group-item bg-transparent text-primary"><strong>Technical Writing:</strong> Documentation, API specs</li>
+                                <li class="list-group-item bg-transparent text-primary"><strong>Client Communication:</strong> Stakeholder management</li>
                             </ul>
                         </div>
-                        <div class="portfolio-items mt-4 row">
-                            <!-- Item 01 -->
-                            <div class="col-lg-4 portfolio-item my-3 seo">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/001.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/001.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 02 -->
-                            <div class="col-lg-4 portfolio-item my-3 graphic">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/002.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/002.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 03 -->
-                            <div class="col-lg-4 portfolio-item my-3 webdesign graphic">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/yassir.PNG" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/yassir.PNG" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">Yassir</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 04 -->
-                            <div class="col-lg-4 portfolio-item my-3 webdesign">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/nestplace.PNG" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single-nestplace">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/nestplace.PNG" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">Nestplace</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 portfolio-item my-3 webdesign">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/srilaxmisuryainfra.PNG" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single-srilaxmisuryainfra">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/srilaxmisuryainfra.PNG" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">Srilaxmisuryainfra</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 05 -->
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign seo">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/005.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/005.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 06 -->
-                            <div class="col-lg-4 portfolio-item my-3 webdesign seo">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/007.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/007.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 07 -->
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/009.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/009.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 08 -->
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign webdesign">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/006.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/006.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign business">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/006.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/006.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">Franchisebouquet</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign ecommerce">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/006.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/006.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">Franchisebouquet</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 09 -->
-                            <div class="col-lg-4 portfolio-item my-3 mobiledesign webdesign">
-                                <div class="portfolio-item-content rounded">
-                                    <img src="assets/img/portfolio/008.jpg" alt="/">
-                                    <div class="img-overlay text-center">
-                                        <div class="img-overlay-content">
-                                            <div class="portfolio-icon">
-                                                <button type="button" data-toggle="modal" data-target="#portfolio-single">
-                                                    <i class="lni-link"></i>
-                                                </button>
-                                                <a href="assets/img/portfolio/008.jpg" class="js-zoom-gallery">
-                                                    <i class="lni-search"></i>
-                                                </a>
-                                            </div>
-                                            <h5 class="text-white mt-3 mb-0">My Work</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </section>
-            <!--   Portfolio End   -->
+                        bar.style.width = bar.getAttribute('data-width');
+                    });
+                }
+            });
+        }, observerOptions);
 
-            <!-- Testimonial Start -->
-            <section id="testimonial" class="section pp-scrollable testimonial text-center" data-navigation-color="#fff" data-navigation-tooltip="CLIENT">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="title-small">
-                                    <p class="text-dark">Testimonial</p>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="text-left">
-                                        <h2 class="text-dark">My  <span class="base-color">Clients</span></h2>
-                                        <p class="text-muted mt-1">What my clients say about me</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-12">
-                                    <div class="owl-carousel">
-                                        <!-- Item 01 -->
-                                        <div class="testimonial-item text-left">
-                                            <p class="mb-2 text-muted">" In a professional context it often happens that private or corporate clients corder a publication to be made.In a professional context it often happens that private or corporate clients corder a publication to be made. "</p>
-                                            <div class="float-left mt-4 mr-3 mr-sm-4">
-                                                <img src="assets/img/client-01.png" alt="/" class="rounded-circle">
-                                            </div>
-                                            <h4 class="float-left mt-5">-Jone Doe, <span class="font-weight-bold">Seo Manager</span></h4>
-                                        </div>
-                                        <!-- Item 02 -->
-                                        <div class="testimonial-item text-left">
-                                            <p class="mb-2 text-muted">" In a professional context it often happens that private or corporate clients corder a publication to be made.In a professional context it often happens that private or corporate clients corder a publication to be made. "</p>
-                                            <div class="float-left mt-4 mr-3 mr-sm-4">
-                                                <img src="assets/img/client-02.png" alt="/" class="rounded-circle">
-                                            </div>
-                                            <h4 class="float-left mt-5">-Paras Shah, <span class="font-weight-bold">UI Designer</span></h4>
-                                        </div>
-                                        <!-- Item 03 -->
-                                        <div class="testimonial-item text-left">
-                                            <p class="mb-2 text-muted">" In a professional context it often happens that private or corporate clients corder a publication to be made.In a professional context it often happens that private or corporate clients corder a publication to be made. "</p>
-                                            <div class="float-left mt-4 mr-3 mr-sm-4">
-                                                <img src="assets/img/client-03.png" alt="/" class="rounded-circle">
-                                            </div>
-                                            <h4 class="float-left mt-5">-Jully Doe, <span class="font-weight-bold">UX Designer</span></h4>
-                                        </div>
-                                        <!-- Item 04 -->
-                                        <div class="testimonial-item text-left">
-                                            <p class="mb-2 text-muted">" In a professional context it often happens that private or corporate clients corder a publication to be made.In a professional context it often happens that private or corporate clients corder a publication to be made. "</p>
-                                            <div class="float-left mt-4 mr-3 mr-sm-4">
-                                                <img src="assets/img/client-04.png" alt="/" class="rounded-circle">
-                                            </div>
-                                            <h4 class="float-left mt-5">-Jully Doe, <span class="font-weight-bold">UX Designer</span></h4>
-                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--  Testimonial End  -->
+        observer.observe(document.getElementById('skills'));
 
-            <!--   Blog Start   -->
-            <section id="blog" class="section pp-scrollable blog" data-navigation-color="#fff" data-navigation-tooltip="BLOG">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                        <div class="row">
-                            <div class="title-small">
-                                <p class="text-dark">Blog</p>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="text-left">
-                                    <h2 class="text-dark">Latest <span class="base-color">News</span></h2>
-                                    <p class="text-muted mt-1">Check Out My Latest Blog Posts</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <!-- Item-01 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item">
-                                    <div class="image-blog">
-                                        <img src="assets/img/blog-img-01.jpg" alt="/" class="img-fluid rounded-top">
-                                    </div>
-                                    <div class="blog-content rounded-bottom text-left p-3">
-                                        <h5 class="mb-0 mt-3"><a href="javascript:void(0)" data-toggle="modal" data-target="#blog-single" class="text-dark font-weight-light">Be Your Best Version</a></h5>
-                                        <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="base-color font-weight-bold">by</i>
-                                                    <span class="text-dark font-italic">John Doe</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link pb-3">
-                                            <button type="button" class="base-color" data-toggle="modal" data-target="#blog-single">Read More...</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item-02 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item">
-                                    <div class="image-blog">
-                                        <img src="assets/img/blog-img-02.jpg" alt="/" class="img-fluid rounded-top">
-                                    </div>
-                                    <div class="blog-content rounded-bottom text-left p-3">
-                                        <h5 class="mb-0 mt-3"><a href="javascript:void(0)" data-toggle="modal" data-target="#blog-single" class="text-dark font-weight-light">5 Tips In UI/UX Web Design</a></h5>
-                                        <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="base-color font-weight-bold">by</i>
-                                                    <span class="text-dark font-italic">John Doe</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link pb-3">
-                                            <button type="button" class="base-color" data-toggle="modal" data-target="#blog-single">Read More...</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item-03 -->
-                            <div class="col-lg-4">
-                                <div class="blog-item">
-                                    <div class="image-blog">
-                                        <img src="assets/img/blog-img-03.jpg" alt="/" class="img-fluid rounded-top">
-                                    </div>
-                                    <div class="blog-content rounded-bottom text-left p-3">
-                                        <h5 class="mb-0 mt-3"><a href="javascript:void(0)" data-toggle="modal" data-target="#blog-single" class="text-dark font-weight-light">Write Your Dreams</a></h5>
-                                        <ul class="list-inline mt-3">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="base-color font-weight-bold">by</i>
-                                                    <span class="text-dark font-italic">John Doe</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                                        <div class="blog-link pb-3">
-                                            <button type="button" class="base-color" data-toggle="modal" data-target="#blog-single">Read More...</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <!--   Blog End   -->
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-            <!--   Contact Start   -->
-            <section id="contact" class="section pp-scrollable contact" data-navigation-color="#fff" data-navigation-tooltip="CONTACT">
-                <div class="display-table">
-                    <div class="display-content">
-                        <div class="container">
-                        <div class="row">
-                            <div class="title-small">
-                                <p class="text-dark">Get in Touch</p>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="text-left">
-                                    <h2 class="text-dark">Get <span class="base-color">In Touch</span></h2>
-                                    <p class="text-muted mx-auto section-subtitle mt-3">Feel Free To Contact Me Any Time</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-lg-12">
-                                <div class="map-responsive">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.25792005804!2d72.4396564995285!3d23.020181763540187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1595003882541!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-lg-6 text-left">
-                                <div class="contact-form">
-                                    <h6 class="font-weight-semibold">Let’s Get Work With Me </h6>
-                                    <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                    <div class="mt-4">
-                                        <p class="mt-2 font-weight-bold"> Address : <span class="text-muted"> New York NY 10018, USA</span></p>
-                                        <p class="mt-2 font-weight-bold"> Phone : <span class="text-muted"> +1 212-695-1962</span></p>
-                                        <p class="mt-2 font-weight-bold"> Mail : <span class="text-muted"><a href="https://retrina.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f313633331f3e3d3c713c3032">[email&#160;protected]</a> </span></p>
-                                        <p class="mt-2 font-weight-bold"> Web : <span class="text-muted">www.retrina.com </span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 text-left">
-                                <h6 class="font-weight-semibold">How can I help you ? </h6>
-                                <form id="contactForm" class="form mt-3">
-                                    <div class="row">
-                                        <div class="col-lg-12 form-item">
-                                            <div class="form-group">
-                                                <input name="name" id="name" type="text" class="form-control" data-name-error="Name is required" placeholder="Your Name*" required >
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 form-item">
-                                            <div class="form-group">
-                                                <input name="email" id="email" type="email" class="form-control" data-email-error="Email is required" data-email-valid="Email is not valid" placeholder="Your Email*" required >
-                                            </div>
-                                        </div>
-                                        <div class="col-12 form-item">
-                                            <div class="form-group">
-                                                <textarea name="comments" id="comments" rows="2" class="form-control h-auto" data-comment-error="Comments is required" placeholder="Your message..."></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 mt-1 text-left">
-                                            <button type="button" class="pill-button" id="submit-btn" onclick="sendEmail()">Send Message</button>
-                                            <div id="message" class="toast text-white shadow-none border-0" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
-                                                <div class="toast-body d-inline-block"></div>
-                                                <button type="button" class="pr-3 close" data-dismiss="toast" aria-label="Close">
-                                                    <span aria-hidden="true" class="lni-close size-xs text-white"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <!--   Contact End   -->
+        // Enhanced Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                alert('Thank you for your message! I will get back to you within 24 hours.');
+                e.target.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
 
-             <!--   Footer Start   -->
-             <div id="footer" class="section pp-scrollable footer" data-navigation-color="#fff" data-navigation-tooltip="FOOTER" data-background-image="assets/img/nill.jpg">
-                 <div class="container-fluid">
-                     <div class="row py-6">
-                         <div class="title-small">
-                             <p class="text-dark">Footer</p>
-                         </div>
-                         <div class="text-center m-auto"> 
-                             <p class="text-dark size-sm">Living, learning, & leveling up<span class="base-color"> one day at a time.</span></p>
-                             <p class="text-dark size-sm">Let's make something <span class="base-color">great!</span></p>
-                             <ul class="list-inline socails">
-                                 <li class="list-inline-item"><a class="text-white" target="_blank" href="https://www.facebook.com/profile.php?id=100024120256803"><i class="lni-facebook-filled text-dark mr-2"></i></a></li>
-                                
-                                 <li class="list-inline-item"><a class="text-white" target="_blank" href="https://github.com/parasshah438"><i class="lni-github-original text-dark mr-2"></i></a></li>
-                                 <li class="list-inline-item"><a class="text-white" href="#"><i class="lni-linkedin-original text-dark mr-2"></i></a></li>
-                             </ul>
-                             
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <a class="color-scheme text-white bg-base-color d-inline-block" href="javascript:void(0)"><i class="lni-night"></i></a>
-        </div>
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRemITiP7JRWpZwLhVt-T2x5MeUFE2KWs"></script>
-        <script src="assets/js/nill.js"></script>
-    </body>
+        // Navbar Background on Scroll with Theme Support
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            const currentTheme = html.getAttribute('data-theme');
+            
+            if (window.scrollY > 50) {
+                if (currentTheme === 'light') {
+                    navbar.style.background = 'rgba(248, 249, 250, 0.98)';
+                } else {
+                    navbar.style.background = 'rgba(26, 26, 26, 0.98)';
+                }
+            } else {
+                if (currentTheme === 'light') {
+                    navbar.style.background = 'rgba(248, 249, 250, 0.95)';
+                } else {
+                    navbar.style.background = 'rgba(26, 26, 26, 0.95)';
+                }
+            }
+        });
+
+        // Animate counters in metrics section
+        const animateCounters = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.metric-number');
+                    counters.forEach(counter => {
+                        const target = counter.textContent;
+                        const isPercentage = target.includes('%');
+                        const isPlus = target.includes('+');
+                        const numericValue = parseInt(target.replace(/[^\d]/g, ''));
+                        
+                        let current = 0;
+                        const increment = numericValue / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= numericValue) {
+                                current = numericValue;
+                                clearInterval(timer);
+                            }
+                            
+                            let displayValue = Math.floor(current);
+                            if (target.includes('M+')) {
+                                displayValue = displayValue + 'M+';
+                            } else if (isPercentage) {
+                                displayValue = displayValue + '%';
+                            } else if (isPlus) {
+                                displayValue = displayValue + '+';
+                            }
+                            
+                            counter.textContent = displayValue;
+                        }, 20);
+                    });
+                }
+            });
+        };
+
+        // Staggered animation for cards
+        const animateCards = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.querySelectorAll('.tech-card, .project-card, .cert-card, .testimonial-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+            });
+        };
+
+        // Initialize card animations
+        document.querySelectorAll('.tech-card, .project-card, .cert-card, .testimonial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+        });
+
+        // Set up observers
+        const metricsObserver = new IntersectionObserver(animateCounters, { threshold: 0.5 });
+        const cardsObserver = new IntersectionObserver(animateCards, { threshold: 0.1 });
+
+        // Observe sections
+        const metricsSection = document.getElementById('metrics');
+        if (metricsSection) {
+            metricsObserver.observe(metricsSection);
+        }
+
+        document.querySelectorAll('#technologies, #ai-projects, #certifications, #testimonials').forEach(section => {
+            if (section) {
+                cardsObserver.observe(section);
+            }
+        });
+
+        // Add typing effect to hero section
+        const heroTitle = document.querySelector('.hero h1');
+        if (heroTitle) {
+            const originalText = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let i = 0;
+            
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    heroTitle.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            };
+            
+            setTimeout(typeWriter, 500);
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add click effects for certification cards
+        document.querySelectorAll('.cert-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Add a subtle click animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+
+        // Portfolio Gallery Functionality
+        const projectItems = document.querySelectorAll('.project-item');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const remainingCountSpan = document.getElementById('remainingCount');
+        let visibleCount = 4; // Show 4 projects initially
+        let currentFilter = 'all';
+
+        // Project data for modal
+        const projectData = {
+            1: {
+                name: "AI Chatbot Platform",
+                image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+                description: "An intelligent customer support chatbot powered by GPT-4 API with advanced natural language processing capabilities. Features real-time conversation handling, sentiment analysis, and seamless integration with existing CRM systems.",
+                technologies: ["OpenAI GPT-5", "PHP","laravel 12", "React","Node.js", "MYSQL", "Socket.IO", "Express","Bootstrap 5"],
+                features: ["Real-time conversation processing", "Multi-language support", "Sentiment analysis", "CRM integration", "Analytics dashboard", "24/7 automated support"],
+                liveLink: "https://chatbot-demo.example.com",
+                githubLink: "https://github.com/parasshah/ai-chatbot",
+                metrics: { metric1: "94%", label1: "Accuracy", metric2: "2.3s", label2: "Response Time", metric3: "500+", label3: "Active Users" }
+            },
+            2: {
+                name: "Modern E-commerce Platform",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+                description: "A complete e-commerce solution built with Next.js featuring advanced product catalog, secure payment processing, inventory management, and AI-powered product recommendations.",
+                technologies: ["Next.js 15", "Stripe", "MongoDB", "Prisma", "Tailwind CSS", "Vercel"],
+                features: ["Advanced product search", "Secure payment processing", "AI recommendations", "Real-time inventory", "Mobile-responsive design", "Admin dashboard"],
+                liveLink: "https://ecommerce-demo.example.com",
+                githubLink: "https://github.com/parasshah/ecommerce-platform",
+                metrics: { metric1: "$2M+", label1: "Revenue", metric2: "99.9%", label2: "Uptime", metric3: "15k+", label3: "Orders" }
+            },
+            3: {
+                name: "Fitness Tracking App",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
+                description: "Cross-platform mobile application for comprehensive health and fitness monitoring with AI-powered workout recommendations and progress tracking.",
+                technologies: ["React Native", "Firebase", "TensorFlow Lite", "Redux", "React Navigation", "Expo"],
+                features: ["Workout tracking", "AI exercise recommendations", "Progress analytics", "Social challenges", "Nutrition logging", "Wearable integration"],
+                liveLink: "https://fitness-app.example.com",
+                githubLink: "https://github.com/parasshah/fitness-tracker",
+                metrics: { metric1: "10k+", label1: "Downloads", metric2: "4.8★", label2: "Rating", metric3: "85%", label3: "Retention" }
+            },
+            4: {
+                name: "AI Analytics Dashboard",
+                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                description: "Real-time data analytics platform with machine learning insights, interactive visualizations, and predictive modeling for business intelligence.",
+                technologies: ["D3.js", "Python", "TensorFlow", "FastAPI", "PostgreSQL", "Redis"],
+                features: ["Real-time data processing", "Interactive charts", "Predictive analytics", "Custom dashboards", "Export capabilities", "API integration"],
+                liveLink: "https://analytics-demo.example.com",
+                githubLink: "https://github.com/parasshah/analytics-dashboard",
+                metrics: { metric1: "1TB+", label1: "Data Processed", metric2: "<500ms", label2: "Query Speed", metric3: "95%", label3: "Accuracy" }
+            },
+            5: {
+                name: "Crypto Wallet DApp",
+                image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&h=400&fit=crop",
+                description: "Decentralized cryptocurrency wallet application with multi-chain support, DeFi integration, and advanced security features.",
+                technologies: ["Web3.js", "Ethereum", "Solidity", "React", "MetaMask", "IPFS"],
+                features: ["Multi-chain support", "DeFi integration", "Smart contract interaction", "Transaction history", "Security features", "Portfolio tracking"],
+                liveLink: "https://crypto-wallet.example.com",
+                githubLink: "https://github.com/parasshah/crypto-wallet",
+                metrics: { metric1: "$5M+", label1: "Volume", metric2: "2500+", label2: "Users", metric3: "99.8%", label3: "Security" }
+            },
+            6: {
+                name: "AI-Powered LMS",
+                image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
+                description: "Intelligent learning management system with personalized course recommendations, AI tutoring, and adaptive learning paths.",
+                technologies: ["Vue.js", "Laravel", "MySQL", "OpenAI", "Redis", "WebRTC"],
+                features: ["Personalized learning", "AI tutoring assistant", "Video conferencing", "Progress tracking", "Content creation tools", "Mobile compatibility"],
+                liveLink: "https://lms-demo.example.com",
+                githubLink: "https://github.com/parasshah/ai-lms",
+                metrics: { metric1: "50k+", label1: "Students", metric2: "92%", label2: "Completion", metric3: "4.9★", label3: "Rating" }
+            },
+            7: {
+                name: "Smart Home IoT Platform",
+                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+                description: "Comprehensive IoT platform for smart home automation with device management, energy monitoring, and intelligent scheduling.",
+                technologies: ["Angular", "MQTT", "AWS IoT", "Node.js", "InfluxDB", "Grafana"],
+                features: ["Device management", "Energy monitoring", "Automated scheduling", "Voice control", "Mobile app", "Cloud integration"],
+                liveLink: "https://smart-home.example.com",
+                githubLink: "https://github.com/parasshah/iot-platform",
+                metrics: { metric1: "1000+", label1: "Devices", metric2: "30%", label2: "Energy Saved", metric3: "99.5%", label3: "Uptime" }
+            },
+            8: {
+                name: "Social Media Platform",
+                image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=600&h=400&fit=crop",
+                description: "Modern social networking platform with real-time messaging, content sharing, and community features built for scalability.",
+                technologies: ["Flutter", "GraphQL", "Redis", "PostgreSQL", "WebSocket", "Docker"],
+                features: ["Real-time messaging", "Content sharing", "Community groups", "Live streaming", "Push notifications", "Cross-platform"],
+                liveLink: "https://social-platform.example.com",
+                githubLink: "https://github.com/parasshah/social-platform",
+                metrics: { metric1: "100k+", label1: "Users", metric2: "1M+", label2: "Messages", metric3: "95%", label3: "Engagement" }
+            }
+        };
+
+        // Initialize portfolio
+        function initPortfolio() {
+            showInitialProjects();
+            updateLoadMoreButton();
+        }
+
+        // Show initial projects (first 4)
+        function showInitialProjects() {
+            projectItems.forEach((item, index) => {
+                if (index < visibleCount) {
+                    item.style.display = 'block';
+                    item.classList.remove('hidden');
+                } else {
+                    item.style.display = 'none';
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Filter projects
+        function filterProjects(category) {
+            const filteredItems = Array.from(projectItems).filter(item => {
+                return category === 'all' || item.dataset.category.includes(category);
+            });
+
+            // Hide all items first
+            projectItems.forEach(item => {
+                item.classList.add('fade-out');
+            });
+
+            setTimeout(() => {
+                projectItems.forEach(item => {
+                    item.style.display = 'none';
+                    item.classList.remove('fade-out', 'fade-in');
+                });
+
+                // Show filtered items
+                filteredItems.forEach((item, index) => {
+                    if (index < visibleCount) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.classList.add('fade-in');
+                        }, index * 100);
+                    }
+                });
+
+                updateLoadMoreButton(filteredItems);
+            }, 200);
+        }
+
+        // Update load more button
+        function updateLoadMoreButton(filteredItems = null) {
+            const itemsToCheck = filteredItems || Array.from(projectItems).filter(item => {
+                return currentFilter === 'all' || item.dataset.category.includes(currentFilter);
+            });
+
+            const hiddenItems = itemsToCheck.filter(item => item.style.display === 'none');
+            const remainingCount = hiddenItems.length;
+
+            if (remainingCount > 0) {
+                loadMoreBtn.classList.remove('hidden');
+                remainingCountSpan.textContent = remainingCount;
+            } else {
+                loadMoreBtn.classList.add('hidden');
+            }
+        }
+
+        // Load more projects
+        function loadMoreProjects() {
+            const filteredItems = Array.from(projectItems).filter(item => {
+                return currentFilter === 'all' || item.dataset.category.includes(currentFilter);
+            });
+
+            const hiddenItems = filteredItems.filter(item => item.style.display === 'none');
+            const itemsToShow = hiddenItems.slice(0, 4); // Show 4 more items
+
+            itemsToShow.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.display = 'block';
+                    item.classList.add('fade-in');
+                }, index * 100);
+            });
+
+            setTimeout(() => {
+                updateLoadMoreButton(filteredItems);
+            }, 500);
+        }
+
+        // Open project modal
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            document.getElementById('modalTitle').textContent = project.name;
+            document.getElementById('modalProjectName').textContent = project.name;
+            document.getElementById('modalDescription').textContent = project.description;
+            document.getElementById('modalImage').src = project.image;
+            document.getElementById('liveLink').href = project.liveLink;
+            document.getElementById('githubLink').href = project.githubLink;
+
+            // Technologies
+            const techContainer = document.getElementById('modalTechnologies');
+            techContainer.innerHTML = project.technologies.map(tech => 
+                `<span class="tech-tag">${tech}</span>`
+            ).join('');
+
+            // Features
+            const featuresContainer = document.getElementById('modalFeatures');
+            featuresContainer.innerHTML = project.features.map(feature => 
+                `<li>${feature}</li>`
+            ).join('');
+
+            // Metrics
+            document.getElementById('modalMetric1').textContent = project.metrics.metric1;
+            document.getElementById('modalMetric1Label').textContent = project.metrics.label1;
+            document.getElementById('modalMetric2').textContent = project.metrics.metric2;
+            document.getElementById('modalMetric2Label').textContent = project.metrics.label2;
+            document.getElementById('modalMetric3').textContent = project.metrics.metric3;
+            document.getElementById('modalMetric3Label').textContent = project.metrics.label3;
+        }
+
+        // Make openProjectModal globally available
+        window.openProjectModal = openProjectModal;
+
+        // Event listeners
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter projects
+                currentFilter = btn.dataset.filter;
+                visibleCount = 4; // Reset visible count
+                filterProjects(currentFilter);
+            });
+        });
+
+        loadMoreBtn.addEventListener('click', loadMoreProjects);
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initPortfolio);
+    </script>
+</body>
 </html>
