@@ -897,13 +897,17 @@
                 padding: 0.3rem 0.6rem;
             }
         }
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
-            transition: left 0.5s ease;
-        }
+           .tech-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(102,126,234,.1), transparent);
+    transition: left 0.5s ease;
+}
+
 
         .tech-card:hover::before {
             left: 100%;
@@ -2004,39 +2008,19 @@
             themeToggle.classList.toggle('fa-sun');
         });
 
-        // Skill Bar Animation
-        const observerOptions = {
-            threshold: 0.5
-        };
-
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-            </section>
-                    const progressBars = entry.target.querySelectorAll('.skill-progress');
-                    progressBars.forEach(bar => {
-            <section id="soft-skills" class="py-5">
-                <div class="container">
-                    <h2 class="section-title">🧑‍💼 Soft Skills & Leadership</h2>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <ul class="list-group list-group-flush bg-transparent">
-                                <li class="list-group-item bg-transparent text-primary"><strong>Team Leadership:</strong> Agile/Scrum methodologies</li>
-                                <li class="list-group-item bg-transparent text-primary"><strong>Code Architecture:</strong> Design patterns, SOLID principles</li>
-                                <li class="list-group-item bg-transparent text-primary"><strong>Mentoring:</strong> Junior developer guidance</li>
-                                <li class="list-group-item bg-transparent text-primary"><strong>Technical Writing:</strong> Documentation, API specs</li>
-                                <li class="list-group-item bg-transparent text-primary"><strong>Client Communication:</strong> Stakeholder management</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                        bar.style.width = bar.getAttribute('data-width');
-                    });
-                }
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const progressBars = entry.target.querySelectorAll('.skill-progress');
+            progressBars.forEach(bar => {
+                bar.style.width = bar.dataset.width;
             });
-        }, observerOptions);
+        }
+    });
+}, { threshold: 0.5 });
 
-        observer.observe(document.getElementById('skills'));
+observer.observe(document.getElementById('skills'));
+
 
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
